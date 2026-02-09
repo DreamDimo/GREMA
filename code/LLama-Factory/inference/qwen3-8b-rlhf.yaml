@@ -1,0 +1,5 @@
+model_name_or_path: /mnt/public/wwj/zhaozq/exp1/LLaMA-Factory/saves/qwen3-8b/full/sft_rm_rlhf_TeleQnA
+template: qwen3
+infer_backend: huggingface  # choices: [huggingface, vllm, sglang, ktransformers]
+trust_remote_code: true
+stage: rm
