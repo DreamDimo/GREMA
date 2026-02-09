@@ -37,7 +37,7 @@ BASE_URL = "http://localhost:6009/v1/"  # 根据实际情况修改
 MODEL_NAME = 'Qwen3-8B-rm'
 
 # 数据集路径
-DATASET_PATH = "/mnt/public/wwj/zhaozq/exp1/dataset/TeleQnA/20251227_newest/TeleQnA_test_filtered.json"
+DATASET_PATH = "/mnt/public/wwj/zhaozq/exp1/dataset/TeleQnA/20251227_newest/TeleQnA_test.json"
 
 # 并发配置
 MAX_CONCURRENT_REQUESTS = 20  # 最大并发请求数
