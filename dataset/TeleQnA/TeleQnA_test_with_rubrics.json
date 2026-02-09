@@ -31,22 +31,6 @@
       "Principle 5: An answer should implicitly or explicitly reference the fact that the chain rule directly follows from the definition of joint and conditional entropy."
     ]
   },
-  "question 100": {
-    "question": "What is a subscription in the context of service delivery? [3GPP Release 18]",
-    "option 1": "A formal agreement outlining the specific treatments and medications a patient consents to receive.",
-    "option 2": "A commercial relationship between a subscriber and a service provider",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify a subscription as a formal business agreement granting a user access to a specific set of services and network capabilities under defined terms.",
-      "Principle 2: The answer should link a subscription to the permanent storage of user-specific data (subscriber profile) within the 5G Core (e.g., in the Unified Data Management - UDM).",
-      "Principle 3: A wrong answer might confuse a subscription with an unrelated concept like a PDU Session, bearer, or charging record.",
-      "Principle 4: The answer must state that the subscription is the foundational entity enabling service delivery, distinct from the transient session or connection.",
-      "Principle 5: An incorrect answer may solely define a subscription as a commercial mobile phone plan without mentioning its technical function as an access and policy framework in the 5G system."
-    ]
-  },
   "question 1000": {
     "question": "How are ultrasonic sensors jammed in the jamming attack?",
     "option 1": "By generating ultrasonic signals approximately around the sensor's resonant frequency",
@@ -109,22 +93,6 @@
       "Principle 3: An answer is incorrect if it suggests using only one type of drone or fails to distinguish between the distinct roles and technical capabilities required for different network tiers.",
       "Principle 4: A correct answer should imply or state that the drones must be capable of wireless communication payload integration (e.g., base station equipment) and have sufficient endurance for their tier's mission profile.",
       "Principle 5: An answer is incorrect if it focuses on non-aerial platforms (e.g., ground vehicles), non-cellular applications (e.g., surveillance), or drones that lack the necessary attributes for persistent, reliable network service."
-    ]
-  },
-  "question 1008": {
-    "question": "What service does the DCF (Distributed Coordination Function) provide? [IEEE 802.11]",
-    "option 1": "A centralized scheduling service for patient appointment coordination (57 characters)",
-    "option 2": "Standard Ethernet-like contention-based service",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that DCF provides a contention-based channel access method using CSMA/CA for stations to share the wireless medium.",
-      "Principle 2: The answer must correctly identify DCF as the fundamental mandatory access method in IEEE 802.11 for ad-hoc and infrastructure modes, enabling distributed coordination.",
-      "Principle 3: An answer is incorrect if it confuses DCF with PCF (Point Coordination Function) or HCF (Hybrid Coordination Function), which are centralized or hybrid access methods.",
-      "Principle 4: The answer must convey that DCF's service is to manage medium access to avoid collisions, primarily through mechanisms like IFS (Interframe Space), backoff timers, and NAV (Network Allocation Vector).",
-      "Principle 5: An answer is incorrect if it mischaracterizes DCF as a service for connection setup, encryption, or error correction, rather than for distributed medium access control."
     ]
   },
   "question 1009": {
@@ -223,22 +191,6 @@
       "Principle 5: An answer is incorrect if it conflates the roles of the LTCA (long-term identity) and ACA (short-term pseudonyms) or omits the critical trust hierarchy from Root CA to ACA."
     ]
   },
-  "question 1016": {
-    "question": "What is one advantage of using a hierarchical fronthaul design with multiple CUs (Centrale Units)?",
-    "option 1": "Increase the flexibility of the network",
-    "option 2": "Primarily reduces medication costs through bulk purchasing",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify a valid advantage related to the hierarchical structure, such as scalability, flexibility, or efficient resource pooling.",
-      "Principle 2: The answer must correctly link the advantage to the presence of multiple CUs, not just to a generic fronthaul or RAN concept.",
-      "Principle 3: An answer is incorrect if it confuses hierarchical fronthaul with other RAN architectures (e.g., disaggregated RAN, D-RAN) or misattributes their advantages.",
-      "Principle 4: The answer must be factually accurate regarding CU functionality (e.g., centralized processing, coordination) within the hierarchical context.",
-      "Principle 5: An answer is incorrect if it describes a disadvantage (e.g., increased latency, complexity) or an advantage of a non-hierarchical design."
-    ]
-  },
   "question 1018": {
     "question": "Which protocol is commonly used for real-time audio? [TCP/IP]",
     "option 1": "TCP",
@@ -317,38 +269,6 @@
       "Principle 3: An answer is incorrect if it claims the process has memory of more than the immediate past state or confuses it with a process requiring full historical knowledge.",
       "Principle 4: A correct answer should reference the concept of 'state space' (the set of all possible states) and 'transition probabilities' between these states.",
       "Principle 5: An answer is incorrect if it fundamentally misidentifies a Markov chain as a deterministic system or a model for non-sequential, independent events."
-    ]
-  },
-  "question 1025": {
-    "question": "What is the primary advantage of considering different timing measures in communication systems?",
-    "option 1": "It ensures complete data integrity by preventing all forms of signal corruption during transmission. (94 characters)",
-    "option 2": "It increases the efficiency of the system by optimizing resource allocation",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify that the primary advantage is to optimize system performance by managing and mitigating timing-related impairments like delay, jitter, and synchronization errors.",
-      "Principle 2: The answer should correctly link different timing measures (e.g., propagation delay, transmission delay, processing delay, jitter) to their impact on key performance metrics such as throughput, latency, and Quality of Service (QoS).",
-      "Principle 3: An answer is incorrect if it focuses solely on a single timing measure (like just 'reducing delay') without addressing the holistic advantage of considering multiple measures for system design and analysis.",
-      "Principle 4: The answer must convey that considering different timing measures is fundamental for designing reliable protocols, efficient resource allocation, and ensuring proper synchronization in networks.",
-      "Principle 5: An answer is wrong if it misattributes the primary advantage to unrelated concepts, such as increasing bandwidth, improving signal strength, or enhancing security, without a core connection to timing analysis."
-    ]
-  },
-  "question 1026": {
-    "question": "What is the scope of VNF configuration? [ETSI NFV Release 5]",
-    "option 1": "Configuration of both software and virtual resources",
-    "option 2": "Management of user access policies, billing systems, and service catalogs.",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: The answer must correctly identify VNF configuration as pertaining to changes within the VNF itself (workload), not to the NFVI or MANO platform lifecycle.",
-      "Principle 2: The answer must state that configuration scope is defined by the VNF Descriptor (VNFD) and its configurable parameters, referencing ETSI's Release 5 model.",
-      "Principle 3: An answer is incorrect if it conflates VNF configuration with VNF instantiation, scaling, or termination (VNF Lifecycle Management).",
-      "Principle 4: The answer must accurately describe or imply the separation from Day-0 (initial) and Day-1+ (on-going) configuration within the service lifecycle.",
-      "Principle 5: An answer is erroneous if it claims configuration scope includes tasks performed by the Virtualised Infrastructure Manager (VIM) or hypervisor."
     ]
   },
   "question 1027": {
@@ -524,38 +444,6 @@
       "Principle 2: The identified problem must be logically and technically relevant to the communication aspect (e.g., network coverage, capacity, link reliability, latency), not just to general UAV operation (like general GPS accuracy or aviation regulations, unless directly tied to comms performance).",
       "Principle 3: An answer is incorrect if it describes a non-existent problem, confuses UAV systems with other technologies (e.g., satellite problems misattributed to UAVs), or identifies a general wireless issue without linking it to the UAV's unique mobile/ aerial nature.",
       "Principle 4: The answer must reflect an understanding that the 'problem' arises from the UAV's role as an aerial platform (e.g., 3D mobility, energy-constrained payload, line-of-sight dependency), rather than a problem inherent to all wireless systems."
-    ]
-  },
-  "question 1040": {
-    "question": "What are the potential adversaries in federated learning that privacy-preserving encoding methods need to protect against?",
-    "option 1": "The server, malicious users, and external adversaries",
-    "option 2": "The institutional review board, hospital administrators, and insurance providers (Length: 66 characters)",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify the honest-but-curious server (or aggregator) as a primary adversary that can see and analyze aggregated or plain client updates.",
-      "Principle 2: A correct answer must identify malicious clients (or participants) as adversaries who can submit poisoned updates or collude to infer other clients' data.",
-      "Principle 3: An answer is incorrect if it fails to mention protection against inference attacks (e.g., reconstructing private training data from gradients) as a key objective of privacy-preserving encoding.",
-      "Principle 4: An answer is incorrect if it incorrectly equates the threat model solely with external network eavesdroppers, ignoring the core insider threats from protocol participants (server and other clients).",
-      "Principle 5: A correct answer may include, but is not strictly required to list, specific attack types like model inversion, membership inference, or property inference as concrete examples adversaries aim to perform."
-    ]
-  },
-  "question 1041": {
-    "question": "Which class has the largest number of possible network addresses? [TCP/IP]",
-    "option 1": "Class A",
-    "option 2": "Class C",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: The correct answer must identify Class A as having the largest number of possible network addresses, based on the original classful addressing scheme.",
-      "Principle 2: The evaluation must be based on the number of distinct network blocks/prefixes available per class, not the number of host addresses within a single network.",
-      "Principle 3: An answer is incorrect if it confuses network addresses with host addresses (e.g., stating Class B or C has more networks because they have more total hosts).",
-      "Principle 4: A correct answer must reflect the understanding that Class A provides 128 (2^7) network blocks, which is greater than Class B's 16,384 (2^14) or Class C's 2,097,152 (2^21) blocks, as 'number of network addresses' refers to the count of unique network identifiers.",
-      "Principle 5: An answer referencing CIDR or classless addressing without acknowledging the question's specific context of 'class' is incomplete or incorrect for this classic TCP/IP classful question."
     ]
   },
   "question 1042": {
@@ -846,22 +734,6 @@
       "Principle 5: The answer is incorrect if it confuses the mechanism with non-cryptographic encoding (e.g., Base64) which is reversible but not designed for secrecy."
     ]
   },
-  "question 1068": {
-    "question": "What is the purpose of encapsulating the ESP header with a new IP (Internet Protocol) header in tunnel mode?",
-    "option 1": "Allow routing without revealing ultimate destination",
-    "option 2": "To provide authentication and integrity for the entire original IP packet.",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that the new outer IP header enables the entire original IP packet (including its original header) to be routed through an untrusted network (like the Internet) to a security gateway or tunnel endpoint.",
-      "Principle 2: A correct answer must convey that this encapsulation in tunnel mode provides confidentiality and integrity for the entire original IP packet, hiding the original source and destination IP addresses from observers on the intermediate network.",
-      "Principle 3: An answer is incorrect if it confuses tunnel mode with transport mode, such as stating the purpose is only to protect the payload of the original packet while leaving the original IP header exposed and used for routing.",
-      "Principle 4: A correct answer should imply or state that the new IP header's addresses are those of the tunnel endpoints (e.g., security gateways), not the original source and destination hosts, which are inside the encrypted payload.",
-      "Principle 5: An answer is incorrect if it misattributes the purpose, such as claiming the new header is primarily for NAT traversal, fragmentation handling, or QoS marking, without establishing the core tunnel-mode security and routing function."
-    ]
-  },
   "question 1069": {
     "question": "What are the short-term reactions to be avoided at frequencies between 0 Hz and 5 MHz? [IEEE C95.1]",
     "option 1": "Acute radiation sickness symptoms",
@@ -1004,22 +876,6 @@
       "Principle 3: An answer is incorrect if it describes a capability that is purely a 5G or earlier technology feature with no advancement or new integration specific to 6G's sensing vision.",
       "Principle 4: The answer must be technically plausible within the context of 6G's use of higher frequency bands (e.g., THz), massive MIMO, and AI/ML integration for sensing.",
       "Principle 5: An answer is incorrect if it confuses 'wireless sensing' with other 6G domains like communication, computing, or energy harvesting, without linking them to the sensing function."
-    ]
-  },
-  "question 108": {
-    "question": "What is the upper limit for brain temperature increase recommended by NRPB for limiting exposure to electromagnetic fields? [IEEE C95.1]",
-    "option 1": "1 °C",
-    "option 2": "3 °C",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: The correct answer must reference the National Radiological Protection Board (NRPB), which was the UK authority for these guidelines, to contextualize the limit.",
-      "Principle 2: The core technical fact is that the upper limit for brain temperature increase is 1 degree Celsius, based on the NRPB's assessment of the whole-body heat burden from RF exposure",
-      "Principle 3: An answer is incorrect if it confuses this specific NRPB-derived limit with other exposure metrics like Specific Absorption Rate (SAR) limits without connecting them correctly.",
-      "Principle 4: An answer must indicate that this 1°C limit is the fundamental basis from which other exposure limits (like SAR in standards IEEE C95.1 or ICNIRP) are derived, not a direct restriction in the standard itself.",
-      "Principle 5: An answer is incorrect if it states a different numerical limit or misattributes the source to a different organization unless naming the NRPB's successor (e.g., Public Health England, UKHSA)."
     ]
   },
   "question 1080": {
@@ -1180,22 +1036,6 @@
       "Principle 3: An answer is incorrect if it suggests these base stations primarily handle voice calls or perform standard radio access without highlighting caching.",
       "Principle 4: An answer is incorrect if it confuses femtocaching with standard femtocells (which provide coverage/capacity but lack the defined caching function).",
       "Principle 5: The answer should not require specific brand names or implementation details, as long as the core concept of integrated storage for content delivery is present."
-    ]
-  },
-  "question 1098": {
-    "question": "What is the maximum number of outstanding MSDUs that a non-QoS STA can have at any time? [IEEE 802.11]",
-    "option 1": "One MSDU from any particular SA",
-    "option 2": "N/A - Cannot generate medical distractors",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: The correct answer must state that the maximum number is 1, as defined by the IEEE 802.11 standard for a non-QoS STA.",
-      "Principle 2: The answer must correctly identify that this limit applies to the number of outstanding MSDUs (MAC Service Data Units) awaiting acknowledgment, not MPDUs or other frame types.",
-      "Principle 3: An answer is incorrect if it confuses the non-QoS STA limit with the higher limits allowed for QoS STAs (which can have multiple Traffic Identifiers, each with its own queue).",
-      "Principle 4: An answer is incorrect if it provides a numerical value other than 1, or suggests there is no limit or an unlimited number.",
-      "Principle 5: The answer must be grounded in the IEEE 802.11 standard's MAC protocol rules for basic DCF access, not in implementation-specific or vendor-specific details."
     ]
   },
   "question 1101": {
@@ -1470,22 +1310,6 @@
       "Principle 5: The answer must be consistent with the IEEE C95.1 standard's definition, where the safety factor is the ratio of the exposure level producing an adverse effect to the permissible exposure limit for the public."
     ]
   },
-  "question 1129": {
-    "question": "What are the TDL models used for? [3GPP Release 17]",
-    "option 1": "To generate channel coefficients",
-    "option 2": "To diagnose lymphatic drainage disorders (44 characters)",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that TDL (Tapped Delay Line) models are used for channel modeling and simulation, specifically for generating realistic time-varying channel impulse responses.",
-      "Principle 2: The answer must correctly associate TDL models with the 3GPP standardization context, where they are defined for performance testing of NR (New Radio) and LTE devices in specific delay spread environments (e.g., TDL-A, TDL-B, TDL-C, TDL-D, TDL-E).",
-      "Principle 3: An answer is incorrect if it misinterprets 'TDL' as a protocol, signaling procedure, or network architecture component, rather than a statistical channel model.",
-      "Principle 4: For Release 17 specifically, a fully correct answer may reference the extension or application of TDL models for new scenarios like integrated access and backhaul (IAB) or non-terrestrial networks (NTN), though stating their core purpose in channel modeling is the essential fact.",
-      "Principle 5: An answer is fundamentally wrong if it omits the primary purpose of generating reproducible, standardized channel conditions for conformance testing and link-level/system-level simulations."
-    ]
-  },
   "question 113": {
     "question": "What does the ground truth data represent? [3GPP Release 18]",
     "option 1": "Actual measured data observed at the time of prediction",
@@ -1613,22 +1437,6 @@
       "Principle 5: The answer must be contextually specific to mobile network operator systems, not used for unrelated technical domains like semiconductor manufacturing or biology."
     ]
   },
-  "question 1137": {
-    "question": "Which entities can consume Management Data Analytics Service (MDAS)? [3GPP Release 17]",
-    "option 1": "The service is consumed exclusively by physicians, nurses, and hospital administrators for clinical decision support.",
-    "option 2": "MnFs, NFs, SON functions, SLS assurance functions, human operators, and AFs",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify the primary consumer as the Management Data Analytics Function (MDAF) within the 5G Core Network.",
-      "Principle 2: A correct answer must include that other authorized Network Functions (NFs) and Operations, Administration, and Maintenance (OAM) systems can consume MDAS analytics.",
-      "Principle 3: An answer is incorrect if it states that external Application Functions (AFs) or User Equipment (UE) can directly consume the MDAS; consumption is internal to the management/control plane.",
-      "Principle 4: The answer must reflect that consumption is based on a producer-consumer model defined in 3GPP TS 28.104, where authorized entities subscribe to or request analytics.",
-      "Principle 5: An answer is incorrect if it conflates MDAS with consumer-facing data services or suggests it is consumed by end-user applications."
-    ]
-  },
   "question 1138": {
     "question": "Who are the inventors of the Domain Name System? [TCP/IP]",
     "option 1": "Vint Cerf and Robert Kahn",
@@ -1643,22 +1451,6 @@
       "Principle 3: An answer is incorrect if it attributes the invention to individuals or entities not central to its creation, such as Vint Cerf, Bob Kahn, Tim Berners-Lee, or commercial organizations.",
       "Principle 4: The answer must correctly associate DNS with the TCP/IP protocol suite, as indicated by the question's context, and not with unrelated networking architectures.",
       "Principle 5: An answer is incorrect if it fundamentally misstates the purpose or core technical function of DNS (e.g., confusing it with DHCP, HTTP, or a simple directory service without the hierarchical, distributed naming concept)."
-    ]
-  },
-  "question 1139": {
-    "question": "In SDMA, which overhead is typically larger: the overhead from sending UL (Uplink) pilots or DL (Downlink ) pilots?",
-    "option 1": "They are equal",
-    "option 2": "DL pilots",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that the overhead from sending UL pilots is typically larger than for DL pilots in SDMA.",
-      "Principle 2: The reasoning must reference that UL pilots require orthogonal resources for each user to estimate the channel at the base station, scaling with the number of users.",
-      "Principle 3: The reasoning must reference that DL pilots can be broadcast or made user-specific but generally require fewer orthogonal resources as the base station already has channel knowledge from UL.",
-      "Principle 4: An answer is incorrect if it states DL pilot overhead is larger or that they are equal, without a valid, system-specific exception (e.g., massive MIMO with downlink training).",
-      "Principle 5: An answer is incorrect if it confuses the fundamental scaling argument: UL overhead scales with the number of users for channel estimation at the receiver (BS), while DL overhead is often independent or scales differently."
     ]
   },
   "question 114": {
@@ -1706,22 +1498,6 @@
       "Principle 3: An answer is incorrect if it suggests the Hosting Operator controls the core network elements, user data, or service policies of the Hosted (Tenant) Operator.",
       "Principle 4: A correct answer should reflect the 3GPP concept of resource isolation and SLAs, where the Hosting Operator manages the shared RAN platform to meet agreed performance levels for the tenant.",
       "Principle 5: An answer is incorrect if it confuses the Hosting Operator's role with that of a Mobile Virtual Network Operator (MVNO) or fails to specify control is over the shared RAN infrastructure, not the tenant's logical network slice."
-    ]
-  },
-  "question 1142": {
-    "question": "What does the basic rate set consist of? [IEEE 802.11]",
-    "option 1": "- Medical conditions, diseases, and pathophysiology",
-    "option 2": "The list of data rates that must be supported by any station wishing to join the network",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that the basic rate set consists of the data rates (in Mbps) that every station in a BSS must be capable of receiving and transmitting.",
-      "Principle 2: The answer must correctly identify that the set is defined in the Beacon and Probe Response frames to advertise mandatory rates for the BSS.",
-      "Principle 3: An answer is incorrect if it confuses the 'basic rate set' with the 'supported rate set' (which lists all rates a device can use, not just mandatory ones).",
-      "Principle 4: An answer is incorrect if it misstates the purpose, such as claiming it is the set of the fastest available rates or only for transmission.",
-      "Principle 5: A correct answer should imply or state that the basic rate set is used for the transmission of certain management and control frames to ensure universal readability."
     ]
   },
   "question 1143": {
@@ -1932,22 +1708,6 @@
       "A wrong answer would be one that confuses 'default treatment' with a common or example method, failing to convey its nature as a policy-driven, capability-based fallback process."
     ]
   },
-  "question 1161": {
-    "question": "What is the difference between the sensitivity of an information receiver and an energy receiver?",
-    "option 1": "An information receiver requires higher signal power",
-    "option 2": "An energy receiver is more sensitive to noise and requires a cleaner signal.",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that an information receiver's sensitivity is defined by the minimum signal-to-noise ratio (SNR) required for reliable information (e.g., bit) recovery, often expressed as a required Eb/N0.",
-      "Principle 2: A correct answer must state that an energy receiver's sensitivity is defined by the minimum received signal power or energy required for reliable detection of the signal's presence, often for tasks like radar or wake-up radios.",
-      "Principle 3: A correct answer must correctly distinguish the fundamental objective: information receivers aim to recover transmitted data (bits/symbols), while energy receivers aim to detect the presence of a signal or harvest its energy.",
-      "Principle 4: An answer is incorrect if it conflates the two concepts, e.g., stating both use the same SNR-based metric or that both are primarily concerned with bit error rate (BER) performance.",
-      "Principle 5: An answer is incorrect if it fails to mention that information receiver sensitivity is inherently tied to the channel's noise power spectral density and the data rate, while energy receiver sensitivity is often an absolute power threshold."
-    ]
-  },
   "question 1162": {
     "question": "What are the three main usage categories of 5G wireless systems?",
     "option 1": "Enhanced Mobile Broadband (eMBB), Massive Machine-Type Communications (mMTC), Ultra-Reliable Low Latency Communications (URLLC)",
@@ -2059,22 +1819,6 @@
       "Principle 5: A correct answer may also correctly include additional relevant network or content metadata (e.g., content popularity, size) as part of a comprehensive state definition."
     ]
   },
-  "question 1173": {
-    "question": "What are the potential gains of MIMO technologies in RF (radio frequency) communications?",
-    "option 1": "Array gain, diversity gain, and multiplexing gain",
-    "option 2": "Improved signal strength and reduced interference only",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must describe how MIMO increases spectral efficiency (bits/s/Hz) and/or capacity through techniques like spatial multiplexing.",
-      "Principle 2: A correct answer must include MIMO's ability to provide array/diversity gain, improving link reliability and coverage through spatial diversity (e.g., combating fading).",
-      "Principle 3: An incorrect answer confuses MIMO with simply using multiple antennas for beamforming only, or falsely claims it inherently increases transmit power per antenna.",
-      "Principle 4: A correct answer should recognize channel conditions (e.g., rich scattering) as key to realizing MIMO gains like multiplexing, not just antenna count.",
-      "Principle 5: An answer is incorrect if it omits the fundamental trade-offs or dependency on the propagation environment for realizing specific MIMO gains."
-    ]
-  },
   "question 1176": {
     "question": "What is the purpose of the S8HR architecture for VoLTE roaming? [3GPP Release 14]",
     "option 1": "To locate all entities in the HPLMN",
@@ -2099,22 +1843,6 @@
       "Principle 3: An answer is incorrect if it misattributes the purpose to general resource allocation without specifying the congestion/QoS protection aspect for M2M, or confuses it with a core network function.",
       "Principle 4: The answer should recognize that this is a radio access network (RAN) level strategy, often involving dedicated carriers, subframes, or PRBs, not just a core network policy.",
       "Principle 5: A correct answer should imply or state that this partitioning helps address the unique characteristics of M2M traffic, such as small, frequent, delay-tolerant transmissions from many devices."
-    ]
-  },
-  "question 1180": {
-    "question": "Which algorithm is based on the Maximum Entropy Method?",
-    "option 1": "MLE",
-    "option 2": "BSMEM",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify an algorithm whose foundational principle is the statistical concept of maximizing entropy, such as the Maximum Entropy Markov Model (MEMM) or the principle's application in natural language processing.",
-      "Principle 2: The answer is incorrect if it names an algorithm fundamentally based on a different core principle (e.g., Hidden Markov Models for state transitions, or algorithms based solely on minimizing error like perceptrons).",
-      "Principle 3: The answer is wrong if it confuses 'Maximum Entropy' with related but distinct concepts like maximum likelihood estimation without the entropy constraint, or information-theoretic channel capacity.",
-      "Principle 4: A correct answer should reference the algorithm's domain, typically in statistical modeling, classification, or sequence tagging (e.g., in NLP for part-of-speech tagging).",
-      "Principle 5: The evaluation must accept any technically accurate algorithm name that is explicitly and correctly derived from the Maximum Entropy Method, regardless of specific phrasing or examples given."
     ]
   },
   "question 1182": {
@@ -2227,22 +1955,6 @@
       "Principle 3: An answer is incorrect if it suggests increasing the transmitter power indiscriminately without addressing system efficiency, matching, or regulatory/compliance issues, as this may not improve net *harvested* energy.",
       "Principle 4: A correct answer must consider the energy harvester's sensitivity and the power management circuitry's efficiency (e.g., DC-DC converters, MPPT for ambient RF), which directly impacts the net energy captured for storage.",
       "Principle 5: A correct answer is one that recognizes the need to optimize the energy transfer link itself (e.g., via beamforming for RF, near-field alignment for inductive coupling) before addressing storage, as harvesting and storage are distinct stages."
-    ]
-  },
-  "question 1190": {
-    "question": "Which technology involves training a base network and then transferring the learned features to a second target network?",
-    "option 1": "Knowledge Transfer Learning",
-    "option 2": "Base Model Pre-training",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: The correct answer must indicate a process where knowledge (features/parameters) is transferred from a pre-trained _source_ model/network to initialize or adapt a _different_ model/network.",
-      "Principle 2: A correct answer must explicitly identify the technique as 'Transfer Learning' or its direct equivalent (e.g., 'model fine-tuning' in this specific context).",
-      "Principle 3: An answer is incorrect if it describes training from scratch, joint training, or multi-task learning without a clear sequential transfer from a base to a target network.",
-      "Principle 4: An answer is incorrect if it conflates the process with unrelated technologies (e.g., ensemble methods, data augmentation, or standard pre-training without mention of a distinct target network).",
-      "Principle 5: The core concept of leveraging learned features to improve efficiency or performance on a related but distinct task for the target network must be implied or stated."
     ]
   },
   "question 1191": {
@@ -2613,22 +2325,6 @@
       "Principle 5: The mention of 'IEEE 802.3' in the question is a distractor related to Ethernet (Data Link layer); a correct answer must not be misled by this and must focus on the OSI model's layer definitions."
     ]
   },
-  "question 1216": {
-    "question": "Which category of energy-efficient operation aims to reduce unnecessary energy consumption by controlling the movement of the UAVs (unmanned aerial vehicles)?",
-    "option 1": "Preventive maintenance protocol",
-    "option 2": "Energy-efficient mobility",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: The correct answer must identify the category as 'mobility management' or 'trajectory optimization' (or a directly equivalent term like 'path planning for energy efficiency'), as this is the specific technical domain for controlling UAV movement to reduce energy consumption.",
-      "Principle 2: An answer is incorrect if it names a general energy-saving category not specifically tied to movement control, such as 'sleep modes', 'hardware efficiency', or 'data compression'.",
-      "Principle 3: An answer is incorrect if it confuses the goal with other UAV operational categories like 'mission planning', 'payload management', or 'communication protocol optimization', which do not have movement control as their primary energy-saving mechanism.",
-      "Principle 4: The answer must correctly link the control of UAV movement (e.g., flight path, speed, hovering) to the reduction of unnecessary energy consumption, not just general energy-aware operation.",
-      "Principle 5: An answer that misattributes the concept to a non-UAV or unrelated telecommunications domain (e.g., 'network handover optimization' for mobile phones) is factually incorrect for this context."
-    ]
-  },
   "question 1217": {
     "question": "What happens to the capacity of the MIMO channel with receiver CSI (Channel State Information) when the transmit power constraint and the bandwidth are doubled?",
     "option 1": "It doubles.",
@@ -2675,22 +2371,6 @@
       "Principle 3: An answer is incorrect if it states the configuration is encapsulated in user plane data (e.g., GTP-U tunnels) or general OAM protocols like SNMP or NETCONF without the specific 3GPP signaling context.",
       "Principle 4: The answer must be consistent with the 3GPP Release 14 specification context, primarily TS 28.405 for management and TS 37.320 for RAN aspects, where QoE configuration is signaled to the RAN.",
       "Principle 5: An answer is incorrect if it confuses the encapsulation for delivery (RANAP/N2 signaling over SCTP) with the final container format for the configuration parameters themselves (which is a QoEMeasurementConfiguration IE)."
-    ]
-  },
-  "question 122": {
-    "question": "Which field is used to carry explicit feedback in the form of noncompressed beamforming feedback matrices? [IEEE 802.11]",
-    "option 1": "Noncompressed Beamforming Report",
-    "option 2": "The Channel State Information (CSI) field",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: The correct answer must identify the 'Compressed Beamforming Report' field as the carrier for explicit, noncompressed feedback matrices.",
-      "Principle 2: The answer must correctly associate the mechanism with the 'VHT Compressed Beamforming Action frame' or the 'MU Exclusive Beamforming Report' in the context of IEEE 802.11ac/ax.",
-      "Principle 3: An answer is incorrect if it confuses this with the 'Channel Sounding' or 'NDP Announcement' fields, which are used for feedback solicitation, not for carrying the feedback report itself.",
-      "Principle 4: An answer is incorrect if it refers to 'implicit feedback' mechanisms or fields like the 'HT-LTF' used for channel estimation, as the question specifies explicit feedback.",
-      "Principle 5: The answer must be specific to the IEEE 802.11 standard (e.g., 802.11ac or 802.11ax) and not a generic MIMO feedback mechanism from other wireless standards."
     ]
   },
   "question 1220": {
@@ -2755,38 +2435,6 @@
       "Principle 3: An answer is incorrect if it confuses URLLC requirements with those of other 5G service types (eMBB or mMTC), such as stating latencies of 10ms+ or reliabilities below 99.9%.",
       "Principle 4: An answer is incorrect if it omits either the reliability or the latency requirement, as both are core, defining parameters for URLLC.",
       "Principle 5: An answer is correct if it accurately conveys the dual requirement (e.g., '1ms latency with 99.999% reliability'), even if phrased differently or uses equivalent values (e.g., 10^-5 error rate)."
-    ]
-  },
-  "question 1225": {
-    "question": "What additional data is collected by the NWDAF for QoS Sustainability analytics in a fine granularity area? [3GPP Release 18]",
-    "option 1": "Both UE level data and GTP metrics data",
-    "option 2": "N/A - Cannot generate medical distractor for telecom question",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify that NWDAF collects UE-level and flow-level QoS measurements for fine granularity areas, not just network-wide aggregates.",
-      "Principle 2: The answer must specify key data types like per-UE throughput, packet delay, packet loss rate, and radio conditions (e.g., RSRP, RSRQ, SINR) collected at fine granularity.",
-      "Principle 3: An answer is incorrect if it confuses QoS Sustainability analytics with other NWDAF analytics (like Network Performance or UE Mobility) or lists data not specified for this specific analytics service in 3GPP Rel-18.",
-      "Principle 4: The answer must reflect the context of 'fine granularity area' (e.g., cell, tracking area, slice-specific area) and the associated spatial/temporal granularity of data collection.",
-      "Principle 5: A correct answer should acknowledge the collection of associated context data (e.g., service type, network slice ID, DNN) alongside the raw QoS measurements for correlation and analysis."
-    ]
-  },
-  "question 1226": {
-    "question": "What is the definition of NG-RAN?",
-    "option 1": "A specialized network for transmitting high-resolution medical imaging data, such as MRI or CT scans, between hospitals.",
-    "option 2": "A radio access network connecting to the 5G core network which uses NR, E-UTRA, or both",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: The answer must clearly identify NG-RAN as the Next Generation Radio Access Network in 5G mobile networks.",
-      "Principle 2: The definition must conceptually separate NG-RAN from the Core Network, stating that it handles the radio access segment.",
-      "Principle 3: The answer must correctly reference that the gNB (and possibly ng-eNB) are the key node types in NG-RAN, not legacy 4G nodes like eNB without the 'ng-' extension.",
-      "Principle 4: The answer must indicate the NG interface connects NG-RAN to the 5G Core (5GC), emphasizing its role in enabling standalone 5G architecture.",
-      "Principle 5: An answer is incorrect if it confuses NG-RAN with the legacy E-UTRAN (4G RAN) or conflates it with the 5G Core Network itself."
     ]
   },
   "question 1227": {
@@ -3141,22 +2789,6 @@
       "Principle 5: An answer is incorrect if it fails to account for the noise variances at Bob (σ_b^2) and Eve (σ_e^2) in the problem formulation, treating it as a noiseless scenario."
     ]
   },
-  "question 1257": {
-    "question": "What are the three components of an optimization process?",
-    "option 1": "Model, optimizer/algorithm, evaluator/simulator",
-    "option 2": "Hypothesis, intervention, and outcome measurement (48 characters)",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify the three core components: an objective function, decision variables, and constraints.",
-      "Principle 2: The answer is incorrect if it lists components from a different domain (e.g., telecommunications network layers, software components) instead of the universal components of a mathematical optimization process.",
-      "Principle 3: An answer is wrong if it omits any of the three essential components or includes more than three as the fundamental set.",
-      "Principle 4: The answer must correctly associate the 'objective function' with the goal to be minimized or maximized, 'decision variables' with the quantities to be chosen, and 'constraints' with the limits on those variables.",
-      "Principle 5: An answer that confuses the optimization process with its algorithms or solution methods (e.g., listing 'input, process, output' or 'gradient descent') is factually incorrect."
-    ]
-  },
   "question 1258": {
     "question": "What does a quantum network consist of?",
     "option 1": "Energy fields, bio-photons, and vibrational healing pathways within the body.",
@@ -3379,22 +3011,6 @@
       "Principle 3: The answer is incorrect if it names a technology that uses a different part of the electromagnetic spectrum (e.g., Wi-Fi, Bluetooth, 5G, or infrared communication).",
       "Principle 4: The answer must correctly link the technology's primary function to high-speed data transfer, not just general illumination or sensing.",
       "Principle 5: The answer is incorrect if it misstates the fundamental operating principle, such as confusing it with fiber optics (which uses guided light) or laser-based free-space optics (which often uses non-visible wavelengths)."
-    ]
-  },
-  "question 1276": {
-    "question": "What is a beam refinement transaction? [IEEE 802.11]",
-    "option 1": "A set of BRP frames consisting of both transmit and receive beam refinement requests and responses",
-    "option 2": "The process of adjusting ultrasound transducer angles during a focused assessment with sonography for trauma (FAST) exam.",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that a Beam Refinement Transaction (BRT) is a process within the IEEE 802.11ad/ay (WiGig) standard to fine-tune the direction of a beamformed link between two stations.",
-      "Principle 2: The answer must correctly identify the BRT as part of the Beam Refinement Protocol (BRP) phase, which follows the initial Sector Level Sweep (SLS) phase for coarse beam alignment.",
-      "Principle 3: An answer is incorrect if it confuses BRT with the initial beamforming training (Sector Level Sweep) or misattributes it to a different wireless standard (e.g., 5G NR, LTE).",
-      "Principle 4: The answer should convey that the transaction involves the exchange of specific BRP frames to test and select refined antenna weight vectors (AWVs) for higher gain and reduced interference.",
-      "Principle 5: A correct answer must imply or state the purpose: to achieve optimal link quality for high-throughput communication in the 60 GHz millimeter-wave band, where signals are highly directional and susceptible to blockage."
     ]
   },
   "question 1277": {
@@ -3669,22 +3285,6 @@
       "Principle 5: An answer is incorrect if it fails to mention that the receive chain handles signal conditioning to overcome impairments like noise and attenuation."
     ]
   },
-  "question 1300": {
-    "question": "What are the two types of key management in IPsec?",
-    "option 1": "Manual and automated",
-    "option 2": "Centralized and decentralized",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: The answer must correctly identify 'manual key management' as one of the two types.",
-      "Principle 2: The answer must correctly identify 'automated key management (using IKE)' as the second type; alternative correct phrasings for IKE include: Internet Key Exchange, IKEv1, IKEv2, or ISAKMP/Oakley.",
-      "Principle 3: An answer is incorrect if it lists types of security protocols (AH/ESP), modes (tunnel/transport), or other IPsec components instead of the key management methods.",
-      "Principle 4: The core distinction in a correct answer is between static, pre-shared keys (manual) and a dynamic protocol for negotiation and establishment (automated/IKE).",
-      "Principle 5: An answer is incorrect if it conflates key management types with keying methods (e.g., symmetric/asymmetric); these are related but not the two primary management types in IPsec."
-    ]
-  },
   "question 1303": {
     "question": "What frequency bands are defined for NR SL (Sidelink) in 3GPP Rel-16?",
     "option 1": "Cannot generate medical distractors.",
@@ -3829,22 +3429,6 @@
       "Principle 5: The answer must not incorrectly state that a different standard body (e.g., ISO, ANSI) was the primary originator of the 10Base2 specification."
     ]
   },
-  "question 1315": {
-    "question": "Which of the following is NOT a type of V2X application? [3GPP Release 17]",
-    "option 1": "Vehicle-to-Pedestrian (V2P)",
-    "option 2": "Vehicle-to-Human (V2H)",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Correctness hinges on identifying the application type explicitly excluded from 3GPP Release 17's defined V2X (Vehicle-to-Everything) communication services.",
-      "A correct answer must reflect the factual content of 3GPP standards, where V2X applications include V2V, V2I, V2P, and V2N (Vehicle-to-Network), but NOT general telematics.",
-      "An answer is wrong if it incorrectly identifies a genuine V2X mode (like V2V or V2I) as the excluded type, failing to recognize them as core pillars of the standard.",
-      "A correct answer must avoid confusion by not naming system components (e.g., a specific radio interface) as an 'application type', as the question targets service/application layer categories.",
-      "Temporal context is essential; an answer suggesting features added in post-Release-17 specifications as the 'excluded type' is incorrect, as the question is explicitly scoped to Release 17."
-    ]
-  },
   "question 1317": {
     "question": "What should a 5G Visited Mobile Network have in order to allow a UE with a 5G subscription to roam into it? [3GPP Release 17]",
     "option 1": "A roaming agreement with the UE's 5G Home Mobile Network",
@@ -3891,38 +3475,6 @@
       "Principle 3: An answer is incorrect if it states the NEF translates a SUPI *into* an external identifier, as this reverses the correct direction of the mapping.",
       "Principle 4: The answer must be consistent with 3GPP TS 23.501 (Release 18) architecture, where this is a key NEF capability for network exposure.",
       "Principle 5: An answer is incorrect if it confuses the translated output with other 5G identifiers like GPSI or PEI, which are not the primary outputs of this specific NEF service operation."
-    ]
-  },
-  "question 1320": {
-    "question": "What are the general directions for communication-efficient distributed learning methods?",
-    "option 1": "Local updating methods, compression schemes, and decentralized training",
-    "option 2": "Increasing server bandwidth, using faster central processors, and aggregating all patient data centrally (Length: 94 chars)",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must correctly identify the core objective of reducing communication volume, frequency, or cost of model/gradient/update exchanges between workers and a parameter server.",
-      "Principle 2: The answer must include specific, accurate technical strategies such as gradient/parameter quantization, sparsification (e.g., top-k compression), or the use of local updates and periodic averaging (e.g., FedAvg).",
-      "Principle 3: An answer is incorrect if it misattributes the primary goal to reducing local computational cost or improving model accuracy without linking it to communication overhead.",
-      "Principle 4: The answer must correctly frame the trade-off between communication efficiency and the potential impact on convergence speed, stability, or final model performance.",
-      "Principle 5: A mention of adjusting synchronization frequency (e.g., synchronous vs. asynchronous updates, increasing the number of local steps) is a key indicator of a correct answer."
-    ]
-  },
-  "question 1321": {
-    "question": "What capability should the 5G system provide for a UE to assist another UE in ranging of a third UE? [3GPP Release 17]",
-    "option 1": "This question falls outside the scope of medical knowledge and clinical practice.",
-    "option 2": "Capability to perform distance and/or angle measurement.",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: The correct answer must identify the capability as 'Sidelink Positioning' or 'SL Positioning' as defined in 3GPP Release 17 for NR V2X.",
-      "Principle 2: The answer must specify that this capability enables a UE to act as a 'relay' or 'anchor' to assist in ranging/positioning of another UE, not directly perform the ranging itself.",
-      "Principle 3: An answer is incorrect if it confuses this with core network-based positioning (e.g., LPP, SUPL) or cellular UL/DL positioning, as the question specifies UE-to-UE assistance.",
-      "Principle 4: The answer must be grounded in the 3GPP Release 17 context, specifically for NR Sidelink, not an earlier release (e.g., Rel-16) or a different technology (e.g., Bluetooth ranging).",
-      "Principle 5: An answer is incorrect if it misstates the fundamental role, such as suggesting the assisting UE directly measures the range to the third UE, rather than facilitating the measurement between others."
     ]
   },
   "question 1323": {
@@ -4019,22 +3571,6 @@
       "Principle 3: An answer is incorrect if it confuses direct-sequence spread spectrum with frequency-hopping spread spectrum or other modulation techniques.",
       "Principle 4: A correct answer must link the chipping sequence to the transformation of each data bit into a longer, higher-rate sequence of chips, which defines the spreading factor.",
       "Principle 5: An answer is incorrect if it states the purpose is primarily for encryption or error correction, as these are secondary benefits, not the core purpose of the spreading mechanism."
-    ]
-  },
-  "question 133": {
-    "question": "What is the temperature threshold for significant damage in the spinal cord and brain tissue across species? [IEEE C95.1]",
-    "option 1": "37 °C to 38 °C",
-    "option 2": "43 °C to 44 °C",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that the temperature threshold for significant damage in the spinal cord and brain tissue is 1°C above the normal baseline temperature, as defined in IEEE C95.1 for human safety standards.",
-      "Principle 2: The answer must correctly identify that this 1°C temperature rise threshold is a core biological basis for establishing human radiofrequency (RF) exposure limits, not a universal threshold for all species.",
-      "Principle 3: An answer is incorrect if it provides a specific numerical threshold (e.g., 43°C, 5°C) that differs from the 1°C rise or fails to specify it is a *rise* above baseline.",
-      "Principle 4: An answer is incorrect if it misattributes the source, such as citing animal study thresholds for thermal damage (which are often higher) instead of the human-derived IEEE C95.1 safety standard principle.",
-      "Principle 5: The answer must correctly link the 1°C temperature rise to the concept of avoiding 'significant' or 'functionally relevant' damage in neural tissue, which is the rationale for the IEEE C95.1 basic restriction."
     ]
   },
   "question 1331": {
@@ -4341,22 +3877,6 @@
       "Principle 5: An answer referencing the consumer term 'WiGig' without the IEEE standard is acceptable if it's clear it means 802.11ad."
     ]
   },
-  "question 1356": {
-    "question": "What is the purpose of the Two Time-scale Update Rule (TTUR)?",
-    "option 1": "To apply gradient penalty or spectral normalization to the generator for stabilizing GAN training.",
-    "option 2": "To use a separate learning rate for the discriminator and generator in GAN training",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that TTUR is a training technique used in Generative Adversarial Networks (GANs) to improve stability.",
-      "Principle 2: A correct answer must explain that TTUR uses different learning rates for the generator and discriminator networks, typically a slower rate for the discriminator.",
-      "Principle 3: An answer is incorrect if it misattributes TTUR to a different machine learning or telecommunications domain, such as channel equalization or scheduling algorithms.",
-      "Principle 4: A correct answer must identify the core purpose: to address the issue of the discriminator converging too quickly, which can lead to mode collapse or unstable training.",
-      "Principle 5: An answer is incorrect if it fails to connect TTUR to the adversarial training dynamic between a generator and a discriminator."
-    ]
-  },
   "question 1357": {
     "question": "Which regulatory bodies currently restrict UAVs (Unmanned aerial vehicles) below a certain take-off weight to operate at heights below 120m?",
     "option 1": "FAA and EASA",
@@ -4501,22 +4021,6 @@
       "Principle 5: The answer must be grounded in 4G LTE-Advanced or 5G NR Carrier Aggregation architecture; answers referencing outdated single-carrier concepts without a designated primary are incorrect for the implied context."
     ]
   },
-  "question 1366": {
-    "question": "What does the ZSM framework reference architecture enable? [3GPP Release 17]",
-    "option 1": "Construction of more complex management services and functions",
-    "option 2": "Full end-to-end automation of all network and service management operations (74 characters)",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that the ZSM framework enables end-to-end, automated management and orchestration of network services and resources.",
-      "Principle 2: A correct answer must mention that the framework is designed for closed-loop automation, enabling self-configuration, self-healing, and self-optimization.",
-      "Principle 3: An answer is incorrect if it confuses ZSM with a specific network function (e.g., a RAN component) or a user-facing service, as it is a management and orchestration framework.",
-      "Principle 4: A correct answer should reference that ZSM achieves this through a domain-agnostic, service-based architecture with defined reference points and data models.",
-      "Principle 5: An answer is incorrect if it omits the core goal of enabling agile, efficient operations across multiple administrative and technological domains (e.g., RAN, Core, Transport)."
-    ]
-  },
   "question 1367": {
     "question": "Which of the following is a key term used to describe schemes that depend on the knowledge of instantaneous interference at the receiver?",
     "option 1": "Interference-aware",
@@ -4563,38 +4067,6 @@
       "Principle 3: An answer is incorrect if it describes a dApp as a traditional web or mobile app that merely interacts with a cryptocurrency wallet or displays blockchain data.",
       "Principle 4: A correct answer must include the concept of being open-source and having its state and data cryptographically secured and maintained by the network's nodes.",
       "Principle 5: An answer is incorrect if it claims dApps are controlled by a single entity or company, fundamentally misunderstanding the decentralized governance model."
-    ]
-  },
-  "question 1372": {
-    "question": "What does the 3GPP system consist of?",
-    "option 1": "3GPP core networks, 3GPP access networks, and non-3GPP access networks",
-    "option 2": "The user equipment (UE), the base stations (gNodeB/eNodeB), and the core network elements like AMF and UPF.",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify the 3GPP system as the standardized architecture for cellular networks, encompassing the Radio Access Network (RAN) and the Core Network (CN).",
-      "Principle 2: The answer must correctly state that the system includes User Equipment (UE) as a fundamental component.",
-      "Principle 3: An answer is incorrect if it confuses 3GPP with a single technology (e.g., stating it is only 3G, 4G, or 5G) rather than the standards body defining the end-to-end system for multiple generations.",
-      "Principle 4: An answer is wrong if it omits the functional split between the access and core networks or fails to mention that the system defines interfaces and protocols between these components.",
-      "Principle 5: A correct answer should imply or state that the system enables mobility and connectivity services, and is not merely a list of network nodes without their functional relationship."
-    ]
-  },
-  "question 1373": {
-    "question": "What is one of the challenges of using encryption in ADS-B?",
-    "option 1": "N/A - Question is outside medical domain",
-    "option 2": "Limited compatibility with the installed base",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify a genuine technical or operational challenge that arises specifically from applying encryption to the ADS-B protocol, such as breaking interoperability, increasing latency, or complicating aircraft identification.",
-      "Principle 2: The answer must correctly reflect that the core challenge stems from ADS-B's design as an open, broadcast system intended for universal, unauthenticated reception to support situational awareness and collision avoidance.",
-      "Principle 3: An answer is incorrect if it cites a general challenge of encryption (e.g., 'it uses computing power') without linking it to the specific constraints or intended function of the ADS-B system.",
-      "Principle 4: A correct answer should reference a specific conflict, such as encrypted messages being unreadable by legacy ground stations or other aircraft, thereby defeating the primary purpose of ADS-B for public surveillance and traffic awareness.",
-      "Principle 5: An answer is incorrect if it misidentifies the challenge by confusing ADS-B with another system (e.g., ACARS, MLS) or by stating a problem that encryption would solve (e.g., spoofing) rather than one it creates."
     ]
   },
   "question 1374": {
@@ -4659,22 +4131,6 @@
       "Principle 3: An answer is incorrect if it confuses MSI with raw data transmission or channel state information (CSI), or if it claims the main advantage is simply 'faster training' without specifying the mechanism of reduced communication cost.",
       "Principle 4: The answer should recognize that this approach is designed for efficient federated or distributed learning at the edge, where frequent full model exchanges are prohibitively expensive.",
       "Principle 5: An answer is wrong if it inverts the asymmetry (e.g., suggesting heavy uplink and light downlink) or misattributes the primary benefit to something like improved model accuracy alone, without addressing the core communication efficiency gain."
-    ]
-  },
-  "question 1378": {
-    "question": "In the presence of channel uncertainty, what type of detection may be preferred?",
-    "option 1": "Non-coherent detection",
-    "option 2": "Maximizing sensitivity",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: The answer must correctly identify that detection must be designed to be robust to imperfect or unknown channel state information.",
-      "Principle 2: A correct answer will indicate a preference for non-coherent detection or robust detection methods (e.g., energy detection, differential detection) when the channel estimate is poor or unreliable.",
-      "Principle 3: An answer is incorrect if it advocates for coherent detection (which requires accurate channel knowledge) as the preferred method under significant uncertainty.",
-      "Principle 4: The answer should recognize that the choice is driven by the trade-off between performance and the overhead/accuracy of channel estimation.",
-      "Principle 5: An answer demonstrating the core concept of avoiding dependence on a precise channel estimate for demodulation is fundamentally correct."
     ]
   },
   "question 1379": {
@@ -5029,22 +4485,6 @@
       "Principle 5: A correct answer must convey that the goal is to achieve long-term performance stability (queue stability) while minimizing time-averaged power consumption, not just instantaneous optimization."
     ]
   },
-  "question 1402": {
-    "question": "What are the different applications of MDPs (Markov decision processes) in data exchange and topology maintenance problems in WSNs (Wireless sensor networks)?",
-    "option 1": "Image reconstruction in MRI and CT scans, maintaining signal pathways in neural networks, and diagnostic data routing.",
-    "option 2": "Data aggregation and routing, opportunistic transmission strategy, and relay selection",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must mention specific applications in WSNs, such as routing decisions, energy management, sleep scheduling, data aggregation, or topology formation, without treating MDPs abstractly.",
-      "Principle 2: The answer must correctly delineate the two problem domains: 'Data Exchange' (e.g., packet routing, transmission scheduling, congestion control) and 'Topology Maintenance' (e.g., node sleep/wake decisions, cluster head rotation, connectivity preservation).",
-      "Principle 3: A critical error is failing to explain the core rationale for using MDPs in WSNs—managing uncertainty in states (e.g., energy levels, channel quality, node failures) and optimizing a long-term reward (e.g., network lifetime, data delivery) under this uncertainty.",
-      "Principle 4: The answer must be grounded in the WSN context; general AI/robotics examples of MDPs without linking to specific sensor network constraints like energy, scalability, or fault tolerance indicate a misunderstanding.",
-      "Principle 5: Mentioning concrete mechanisms is key; an answer stating only 'for optimization' or 'for decision-making' is too vague and incomplete for correctness."
-    ]
-  },
   "question 1405": {
     "question": "What does AMF stand for in the 5G System? [3GPP Release 18]",
     "option 1": "Access and Mobility Function",
@@ -5219,38 +4659,6 @@
       "Principle 3: An answer is incorrect if it describes the AG channel as a simple, static, or purely AWGN channel without accounting for its dynamic and complex multi-path nature.",
       "Principle 4: A correct answer should reference key impairments such as large-scale path loss (often following free-space or two-ray models), shadowing, and small-scale fading due to scattering.",
       "Principle 5: An answer is incorrect if it conflates AG channel characteristics with those of deep indoor, underground, or dense urban terrestrial channels that are typically NLoS-dominated."
-    ]
-  },
-  "question 1417": {
-    "question": "Which equation describes wave propagation in magneto-optical materials under restricted time reversal?",
-    "option 1": "Wave equation (reversed)",
-    "option 2": "Anisotropic wave equation",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify the governing equation as the wave equation derived from Maxwell's equations incorporating a non-reciprocal, time-antisymmetric permittivity tensor (e.g., a gyrotropic or magneto-optical tensor).",
-      "Principle 2: The answer must correctly link the 'restricted time reversal' condition to the breaking of Lorentz reciprocity, typically by including an odd term under time reversal (like the off-diagonal elements proportional to an applied static magnetic field).",
-      "Principle 3: An answer is incorrect if it presents a standard, reciprocal wave equation (e.g., for isotropic or non-magnetic media) without the time-antisymmetric tensor component essential for magneto-optics.",
-      "Principle 4: The answer must be consistent with the constitutive relation D = ε(ω, H₀)E, where ε is a Hermitian tensor with anti-symmetric off-diagonal parts dependent on the external magnetic bias H₀.",
-      "Principle 5: A correct answer should reference or imply the specific form of the wave equation, such as ∇×∇×E - (ω²/c²)ε̿(ω, H₀)·E = 0, highlighting the tensorial nature of ε̿."
-    ]
-  },
-  "question 142": {
-    "question": "What message is sent by the MS to the network to request the release of a GMM context? [3GPP Release 18]",
-    "option 1": "GMM context release request (initiated by the network)",
-    "option 2": "Detach request (mobile terminated detach)",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: The answer must specify the correct GPRS Mobility Management (GMM) message type, which is the 'GMM DETACH REQUEST' message, as the MS-initiated request for GMM context release.",
-      "Principle 2: Correctly identifying the 'detach type' information element within the GMM DETACH REQUEST message is essential, as it distinguishes between different types of detach requests (e.g., power off, non-power off).",
-      "Principle 3: The answer is incorrect if it states any other GMM or SM message (e.g., ROUTING AREA UPDATE REQUEST, SERVICE REQUEST, ACTIVE PDP CONTEXT ACCEPT) as the request for GMM context release.",
-      "Principle 4: The answer is partially incomplete if it omits that this request belongs to the GMM protocol and not the Session Management (SM) protocol or the Non-Access Stratum (NAS) layer in general without the GMM-specific context.",
-      "Principle 5: A correct answer must reflect the MS (Mobile Station) as the originator of the request, not the network (e.g., not a GMM DETACH ACCEPT command from the network)."
     ]
   },
   "question 1420": {
@@ -5633,22 +5041,6 @@
       "Principle 3: An answer is incorrect if it suggests a simple summation of the maximum rated power of all power amplifiers or transceivers without accounting for load and the shared static overhead.",
       "Principle 4: The answer must acknowledge that the calculation parameters (static power, slope, etc.) are defined per BS power class and configuration in the relevant 3GPP specification (e.g., TS 37.8xx series for NR).",
       "Principle 5: A correct answer should imply or state that the model is used for energy efficiency evaluation and network planning, not for real-time operational power measurement."
-    ]
-  },
-  "question 1453": {
-    "question": "What is prioritization of URLLC (Ultra-Reliable Low Latency Communication) traffic?",
-    "option 1": "Delaying all other network traffic until URLLC transmissions are completely finished, regardless of duration. (Length: 103 characters)",
-    "option 2": "Giving more resources to URLLC services compared to other types of services",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that prioritization of URLLC traffic is a network mechanism to ensure its stringent requirements for ultra-high reliability and extremely low latency are met, often by preempting or scheduling it ahead of other traffic types like eMBB.",
-      "Principle 2: The answer must correctly identify that this is a core 5G feature, involving techniques like grant-free access, preemptive scheduling, and dedicated resource allocation to minimize latency and packet loss.",
-      "Principle 3: An answer is incorrect if it confuses URLLC with general Quality of Service (QoS) without specifying the extreme reliability (e.g., 99.999%) and latency (e.g., 1 ms) targets, or if it misattributes it as a primary feature of 4G/LTE instead of 5G NR.",
-      "Principle 4: The answer should recognize that prioritization occurs across multiple network layers (radio access, core) and involves trade-offs, potentially impacting the performance of other services like enhanced Mobile Broadband (eMBB).",
-      "Principle 5: A correct answer must imply or state that the goal is to guarantee service for critical applications such as industrial automation, autonomous vehicles, or remote surgery, where failure is not an option."
     ]
   },
   "question 1454": {
@@ -6797,22 +6189,6 @@
       "Principle 5: A correct answer may reference specific technologies (e.g., Qi, resonant inductive coupling) to illustrate different achievable ranges, but must not conflate inductive coupling with far-field radiative methods."
     ]
   },
-  "question 1540": {
-    "question": "What is the fundamental principle of RS (Rate-splitting) in wireless networks?",
-    "option 1": "As a medical AI, I cannot answer questions about wireless network engineering. My expertise is limited to medical diagnostics, treatment, and healthcare.",
-    "option 2": "Partially decoding the interference and partially treating the remaining interference as noise",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must explain that RS operates by splitting each user's message into a common part and a private part.",
-      "Principle 2: A correct answer must state that these parts are encoded into superposed common and private streams for transmission.",
-      "Principle 3: An answer is incorrect if it confuses RS with simple user multiplexing (like SDMA) or power-domain NOMA without message splitting.",
-      "Principle 4: A correct answer must identify the fundamental goal: managing multi-user interference by enabling receivers to decode and subtract the common stream first.",
-      "Principle 5: An answer is incorrect if it misrepresents the core mechanism, such as describing it as merely a scheduling technique or a form of hierarchical modulation without targeted message splitting."
-    ]
-  },
   "question 1542": {
     "question": "What is one of the security challenges posed by wearable devices?",
     "option 1": "Physical device failure leading to inaccurate health monitoring",
@@ -6907,22 +6283,6 @@
       "Principle 3: An answer is incorrect if it states the SN-DU sends a UE CONTEXT SETUP REQUEST, as this is the message it receives, not sends.",
       "Principle 4: An answer is incorrect if it confuses the protocol or interface, e.g., stating a message is sent over F1-C when the context is about E1, or involving the wrong network function (e.g., gNB-CU-UP).",
       "Principle 5: An answer is incorrect if it describes a different procedure, such as modification or release, instead of the initial setup response."
-    ]
-  },
-  "question 1551": {
-    "question": "What is the purpose of model-weighting in asynchronous federated learning?",
-    "option 1": "To quickly include newly-arrived nodes",
-    "option 2": "To maximize data privacy by obscuring individual node contributions",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that model-weighting's primary purpose is to aggregate local model updates from asynchronous clients, accounting for their differing arrival times and data distributions to produce a stable global model.",
-      "Principle 2: The answer must correctly link model-weighting to mitigating the negative effects of system heterogeneity (e.g., stragglers, variable network delays) and statistical heterogeneity (non-IID data) inherent in asynchronous FL.",
-      "Principle 3: An answer is incorrect if it confuses model-weighting with simple averaging (like FedAvg) without addressing the temporal aspect and staleness of updates, or if it misattributes the purpose solely to data volume instead of update recency/quality.",
-      "Principle 4: The answer should correctly identify that weighting strategies often consider factors like the age (staleness) of an update, the number of local training steps, or the client's data sample size to assign appropriate influence in the aggregation.",
-      "Principle 5: A fundamentally wrong answer would claim the purpose is for client selection, encryption, or privacy preservation, as these are related but distinct concepts from the core aggregation mechanism of asynchronous FL."
     ]
   },
   "question 1552": {
@@ -7197,22 +6557,6 @@
       "Principle 5: An answer is incorrect if it states a drawback that is generic to all CF-mMIMO (e.g., fronthaul requirements) without specifying the unique complications introduced by the *user-centric* clustering approach."
     ]
   },
-  "question 1578": {
-    "question": "Which regulations cover the design, manufacture, and operation of drones?",
-    "option 1": "EU2019/945 and EU2019/947",
-    "option 2": "The older EU directives 2007/47/EC",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify the primary regulatory body as the national aviation authority (e.g., FAA in the US, EASA in the EU, CAA in the UK) and reference overarching aviation laws.",
-      "Principle 2: The answer must correctly distinguish between regulations for recreational/hobbyist use and commercial/professional operations, as they often have different rule sets.",
-      "Principle 3: A key factual error is failing to mention specific operational categories or classes (e.g., Open, Specific, Certified under EU rules) that dictate design and manufacturing standards.",
-      "Principle 4: The answer must include core technical domains regulated, such as remote identification (Remote ID), geofencing, maximum altitude/weight limits, and frequency spectrum use for command & control links.",
-      "Principle 5: An incorrect answer would omit the requirement for operator registration, pilot certification (e.g., Part 107 license), or operational approvals for flights beyond visual line of sight (BVLOS)."
-    ]
-  },
   "question 1579": {
     "question": "What is the main condition for achieving perfectly secure data transmission in physical-layer security?",
     "option 1": "Not applicable. This is a question for cybersecurity, not clinical practice.",
@@ -7285,37 +6629,6 @@
       "Principle 3: An answer is incorrect if it confuses the number of multiplications with the number of addition operations, digit placements, or the final product's number of digits.",
       "Principle 4: The answer must directly and logically result in N² fundamental multiplications, as this is the defining computational characteristic of the schoolbook method.",
       "Principle 5: A technically correct answer may describe the process or state the formula; any equivalent expression (e.g., N×N, N^2) is acceptable if it conveys the same factual count."
-    ]
-  },
-  "question 1585": {
-    "question": "Which part of the radio access network consumes the most energy?",
-    "option 1": "Not a medical question",
-    "option 2": "Base stations",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify the base station (or its components, specifically the power amplifier and radio unit) as the primary energy consumer.",
-      "Principle 2: The answer must correctly frame the context: within the Radio Access Network (RAN), the energy consumption is dominated by the active network elements (base stations) serving end-user devices, not the backhaul or core network interfaces.",
-      "Principle 3: An answer is incorrect if it identifies the core network, backhaul links, or user equipment as the part of the RAN consuming the most energy.",
-      "Principle 4: The answer should recognize that the energy consumption is largely proportional to the transmitted radio frequency power and the associated cooling/ancillary systems, not signaling or data processing overhead.",
-      "Principle 5: A correct answer may specify that macro base stations (or their power amplifiers) are the largest consumers, especially when compared to small cells or other RAN elements, within a typical network deployment."
-    ]
-  },
-  "question 1587": {
-    "question": "What is the purpose of the network digital twin (NDT)?",
-    "option 1": "To provide a static 3D visualization of anatomical structures for educational purposes only.",
-    "option 2": "To build an accurate data-driven digital network representation",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: The answer must correctly identify the core purpose of an NDT as creating a virtual, real-time, digital replica (or model) of a physical communications network for simulation and analysis.",
-      "Principle 2: The answer must cite at least one primary application area, such as network planning and optimization, predictive maintenance, performance testing, or improved decision-making, which demonstrates understanding of its use-case.",
-      "Principle 3: An answer is incorrect if it misrepresents the NDT as being solely for security purposes (like a honeypot) or customer-facing network visualization, confusing it with other network monitoring concepts.",
-      "Principle 4: The answer must reflect that the NDT ingests live or historical data from the physical network to keep the model synchronized and enable 'what-if' scenario testing and failure prediction."
     ]
   },
   "question 1588": {
@@ -7942,22 +7255,6 @@
       "Principle 5: A correct answer may reference common implementations or design methods, such as using a compander (compressor-expander) or designing a non-linear quantizer based on the signal's probability density function (PDF)."
     ]
   },
-  "question 164": {
-    "question": "What is network compression?",
-    "option 1": "The process of reducing the storage and computational requirements of DNNs by converting a dense network to a sparse network",
-    "option 2": "The method of solely increasing the inference speed of a neural network by optimizing code and utilizing specialized hardware like GPUs, without altering the network's fundamental structure or parameter count.",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must define network compression as a technique to reduce the size of data for transmission or storage, thereby conserving bandwidth and improving efficiency.",
-      "Principle 2: The answer must correctly identify the primary goal: to transmit the same information using fewer bits, which is distinct from encryption or error correction.",
-      "Principle 3: An answer is incorrect if it confuses network compression with data compression in non-network contexts (e.g., file archiving) without linking it to transmission.",
-      "Principle 4: The answer should mention common methods (e.g., lossless like gzip, or lossy for media) and their application in protocols (e.g., HTTP, VoIP).",
-      "Principle 5: A fundamentally wrong answer misidentifies the core concept, such as equating it with data throttling, traffic shaping, or signal amplification."
-    ]
-  },
   "question 1640": {
     "question": "Where are the dApps executed in the O-RAN architecture?",
     "option 1": "At the Distributed Unit",
@@ -8020,22 +7317,6 @@
       "Principle 3: An answer is incorrect if it provides a different expansion for SBA (e.g., Small Business Administration, Single Board Computer) unrelated to the NFV context.",
       "Principle 4: An answer is incorrect if it misattributes SBA to a different standard or release (e.g., 3GPP 5G Core) without acknowledging its role in ETSI NFV Release 5.",
       "Principle 5: The answer is correct even if phrased differently (e.g., 'Service Based Architecture' without the hyphen) as long as the core acronym expansion and context are factually accurate."
-    ]
-  },
-  "question 1648": {
-    "question": "What is the focus of the High-Efficiency WLAN (HEW) Task Group?",
-    "option 1": "To address dense scenarios and increase users' throughput needs in WLANs.",
-    "option 2": "To manage hypertensive emergencies and reduce blood pressure within a safe therapeutic window. (82 characters)",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that the HEW Task Group's focus was to develop the IEEE 802.11ax standard (now known as Wi-Fi 6).",
-      "Principle 2: A correct answer must identify the core technical goal as improving spectral efficiency and performance in dense, high-user environments.",
-      "Principle 3: An answer is incorrect if it confuses HEW (802.11ax) with other IEEE 802.11 task groups, such as those for 802.11ac (VHT) or 802.11be (EHT/ Wi-Fi 7).",
-      "Principle 4: An answer is incorrect if it misstates the primary application, such as focusing on long-range communication instead of efficiency in dense deployments.",
-      "Principle 5: A correct answer should reference key enabling technologies like OFDMA and uplink MU-MIMO, or the overarching aim of 4x increase in average user throughput."
     ]
   },
   "question 1649": {
@@ -8710,22 +7991,6 @@
       "Principle 5: A correct answer should mention the operational advantage of simplified user mobility, allowing users to roam and connect from different physical locations while maintaining their VLAN-based network policies."
     ]
   },
-  "question 170": {
-    "question": "What mechanism does the 5G system support for a 3rd party application to request resilient timing? [3GPP Release 17]",
-    "option 1": "Mechanism for a 3rd party application to request resilient timing with specific KPIs.",
-    "option 2": "N/A - Cannot generate medical distractors for non-medical question",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: The answer must correctly identify the mechanism as the 'Resilient Timing Service' (RTS) or the 'RTS Client' function, as standardized in 3GPP Release 17 for third-party applications.",
-      "Principle 2: The answer must correctly state that the mechanism is specified within the 5G Service-Based Architecture (SBA), specifically as part of the Network Exposure Function (NEF) service 'Nnef_TimingService'.",
-      "Principle 3: A wrong answer would incorrectly reference legacy or unrelated mechanisms like PTP, SyncE, or GNSS directly to the application, or confuse it with network-internal synchronization (e.g., for RAN).",
-      "Principle 4: The answer must convey that the mechanism allows an external application (AF) to request and receive timing information (e.g., time, frequency, quality/confidence level) from the 5G network with specified resilience requirements.",
-      "Principle 5: A wrong answer would misattribute the function to the wrong Network Function (e.g., NRF, PCF) or describe an incorrect architectural interaction not defined in TS 23.434 for Release 17."
-    ]
-  },
   "question 1701": {
     "question": "How can the transformation from a LCS to a GCS be expressed? [3GPP Release 18]",
     "option 1": "Surgical decompression procedure (30 characters)",
@@ -9014,22 +8279,6 @@
       "Principle 5: The answer must convey the core concept that DPSK is a non-coherent form of phase modulation, enabling demodulation without a precise phase reference."
     ]
   },
-  "question 1723": {
-    "question": "Which of the following is not a category of underwater environmental monitoring applications?",
-    "option 1": "Assessment of biodiversity and species populations",
-    "option 2": "Monitoring of atmospheric conditions",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: The correct answer must identify the option that is not a standard, recognized application category within the established technical scope of underwater environmental monitoring (e.g., water quality, marine life, seabed mapping, pollution detection).",
-      "Principle 2: An answer is incorrect if it selects an option that is a legitimate and common application area for underwater sensor networks or monitoring systems.",
-      "Principle 3: A common error is confusing application categories with enabling technologies (e.g., acoustic communication, sensor types) or with unrelated terrestrial monitoring domains.",
-      "Principle 4: The evaluation must be based on the factual classification of applications in underwater monitoring literature and practice, not on subjective interpretation.",
-      "Principle 5: An answer is wrong if it misidentifies a core application area (like climate change study or disaster warning) as 'not a category', as these are integral to the field's purpose."
-    ]
-  },
   "question 1724": {
     "question": "What is the purpose of using floating cars (FCs) in traffic sensing?",
     "option 1": "To monitor intracranial pressure in traumatic brain injury patients (78 characters)",
@@ -9254,22 +8503,6 @@
       "Principle 5: The answer must not imply that signals at the cut-off frequency propagate with zero attenuation or infinite wavelength without noting the theoretical singularity where the propagation constant goes to zero."
     ]
   },
-  "question 181": {
-    "question": "What does a large level of coupling between the transmit and receive antennas in large intelligent surfaces indicate?",
-    "option 1": "This represents a positive feedback loop that must be interrupted to prevent systemic inflammatory response. (104 characters)",
-    "option 2": "The generated wave is confined within the space between the transmit and receive antennas.",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "The answer must correctly identify that high transmit-receive antenna coupling in Large Intelligent Surfaces (LIS) primarily indicates a failure of the channel hardening effect, which is a key benefit of massive MIMO systems.",
-      "The answer should associate the large coupling level with the concept of high spatial correlation between channel paths, as the LIS elements are physically large and positioned close to each other.",
-      "A correct answer must state that such coupling severely degrades the multiplexing and/or beamforming performance, as the intended independent spatial streams become interdependent and channel state information becomes outdated more quickly.",
-      "A factually incorrect answer would claim a large coupling level is a beneficial feature or indicates improved degrees of freedom or beamforming gain.",
-      "A correct answer must be consistent with the fact that this condition is undesirable for conventional LIS operation, and typically prompts signal processing countermeasures (e.g., pre-coding, scheduling) to manage the resulting interference."
-    ]
-  },
   "question 182": {
     "question": "What is the role of the AP (access point) during the Authentication phase?",
     "option 1": "To generate and provide the encryption keys to the STA and the AS",
@@ -9430,22 +8663,6 @@
       "Principle 5: An answer is incorrect if it fails to specify that the 'multiple' and 'short-term' nature of the credentials is central to the problem, rather than a single credential issue."
     ]
   },
-  "question 20": {
-    "question": "What is the purpose of network exposure to the Edge Application Server (EAS)? [3GPP Release 18]",
-    "option 1": "To support low latency network exposure to local AF",
-    "option 2": "To perform a confirmatory PET-CT scan for metabolic activity",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that the purpose is to securely expose network capabilities and events (e.g., QoS, location, device status) to authorized third-party Application Functions (AFs) via standardized APIs.",
-      "Principle 2: A correct answer must identify that this exposure enables new service creation, innovation, and optimized application performance by allowing applications to interact with and influence the 3GPP network.",
-      "Principle 3: An answer is incorrect if it confuses the Edge Application Server (EAS) with the Network Exposure Function (NEF); the EAS is an application-level entity that *consumes* exposed capabilities, while the NEF is the core network function that *provides* the exposure.",
-      "Principle 4: An answer is incorrect if it misrepresents the purpose as simply providing user data or raw network access to third parties without the context of controlled, policy-driven API-based exposure for service enablement.",
-      "Principle 5: A correct answer should implicitly or explicitly connect the purpose to key 3GPP architectural concepts like Service-Based Architecture (SBA) and the CAPIF framework for API management."
-    ]
-  },
   "question 201": {
     "question": "What is the role of underlay network nodes in the Web3 network?",
     "option 1": "They act as synaptic relays for transmitting neural signals across decentralized cognitive networks.",
@@ -9508,22 +8725,6 @@
       "A technically incorrect answer would propose the primary benefit as raw computational cost reduction, as edge compute is often more expensive per unit than centralized cloud and this is not its primary driver.",
       "The answer must not misattribute the primary benefit to improved model training capabilities, as offloading typically concerns inference, not the heavy, centralized process of training.",
       "An answer that confuses edge offloading with mere 'device-level' (on-device) computing is incorrect; the principle must involve the distributed server/network infrastructure close to users."
-    ]
-  },
-  "question 206": {
-    "question": "What is a PICS proforma? [IEEE 802.15.4]",
-    "option 1": "A generic patient information and consent sheet used for various hospital procedures and admissions. (94 characters)",
-    "option 2": "A statement of which capabilities and options of a protocol have been implemented.",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that a PICS proforma is a Protocol Implementation Conformance Statement proforma, a standardized checklist for verifying a device's implementation of a protocol.",
-      "Principle 2: The answer must correctly link the PICS proforma to its purpose: to specify mandatory, optional, and conditional capabilities for conformance testing and interoperability.",
-      "Principle 3: An answer is incorrect if it misidentifies the PICS proforma as a performance specification, a user manual, or a general device description unrelated to conformance.",
-      "Principle 4: The answer must correctly associate the PICS proforma with the relevant standard, in this case IEEE 802.15.4 (e.g., for LR-WPANs).",
-      "Principle 5: An answer is incorrect if it fails to mention that the proforma is a structured document (often a table) used by implementers and testers to declare and verify protocol features."
     ]
   },
   "question 207": {
@@ -9758,22 +8959,6 @@
       "Principle 3: The answer must not confuse CI with other MIMO concepts like Channel State Information (CSI) or Channel Inversion, which are different technical terms.",
       "Principle 4: The answer must recognize that CI is a beamforming/precoding technique specifically for systems with low-resolution (e.g., 1-bit) DACs, enabling coherent signal combination despite the hardware limitation.",
       "Principle 5: An incorrect answer would fail to connect CI to the goal of maximizing the received signal power at the user by aligning signal phases, which is the fundamental purpose of the technique."
-    ]
-  },
-  "question 228": {
-    "question": "Which techniques are commonly exploited to enhance the physical-layer security of wireless communications?",
-    "option 1": "Artificial noise and beamforming techniques",
-    "option 2": "This question pertains to engineering, not medicine, and cannot be answered.",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must include core techniques that manipulate the physical layer's characteristics, such as beamforming/precoding, artificial noise injection, or channel-based key generation.",
-      "Principle 2: An answer is incorrect if it confuses physical-layer security with higher-layer methods (e.g., mentioning encryption algorithms like AES or network-layer firewalls as the primary enhancement).",
-      "Principle 3: The answer should reference the principle of exploiting channel randomness or properties (e.g., fading, reciprocity) to create an advantage for the legitimate receiver over an eavesdropper.",
-      "Principle 4: A correct answer may include the concept of resource allocation or optimization (e.g., power allocation, antenna selection) for security, not just for performance.",
-      "Principle 5: An answer is incomplete or misleading if it omits the fundamental goal of creating a capacity or SNR gap between the legitimate and eavesdropper's channel."
     ]
   },
   "question 229": {
@@ -10384,22 +9569,6 @@
       "Principle 5: The answer is incorrect if it claims the stationary distribution is defined for all Markov chains without noting the required conditions (e.g., irreducibility and aperiodicity are for uniqueness/convergence, not for existence of a stationary distribution)."
     ]
   },
-  "question 281": {
-    "question": "What are transverse electric (TE) modes?",
-    "option 1": "Modes where the electric field is perpendicular to the direction of propagation and the magnetic field has a component in the direction of propagation",
-    "option 2": "Modes where the magnetic field is entirely perpendicular to the direction of propagation, and the electric field has a longitudinal component along the propagation axis. This is the definition of Transverse Magnetic (TM) modes, not TE.",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that TE modes are electromagnetic wave propagation modes where the electric field vector is entirely transverse (perpendicular) to the direction of wave propagation.",
-      "Principle 2: A correct answer must identify that in TE modes, the longitudinal component of the electric field (Ez) is zero, while the magnetic field has both transverse and longitudinal components (Hz ≠ 0).",
-      "Principle 3: An answer is incorrect if it states the electric field has a component in the direction of propagation (Ez ≠ 0) or confuses TE with TM (Transverse Magnetic) modes.",
-      "Principle 4: A correct answer should mention that TE modes are a fundamental classification for guided waves in structures like waveguides, optical fibers, or transmission lines.",
-      "Principle 5: An answer is incorrect if it fails to distinguish TE modes from TEM (Transverse Electromagnetic) modes, where both electric and magnetic fields are entirely transverse."
-    ]
-  },
   "question 282": {
     "question": "What is the purpose of using at least two different materials in the fabrication of optical fibers?",
     "option 1": "To create a variation of refractive index inside the fibers",
@@ -10414,22 +9583,6 @@
       "Principle 3: An answer is incorrect if it confuses the core and cladding function or implies the cladding's sole purpose is mechanical protection.",
       "Principle 4: Must state that the cladding's lower refractive index confines the propagating light signal to the core, preventing leakage.",
       "Principle 5: An answer is incorrect if it claims the second material serves solely for manufacturing or strength purposes without mentioning the index difference."
-    ]
-  },
-  "question 283": {
-    "question": "Which technology allows base stations (BSs) and devices to harvest energy from renewable resources and even RF (radio frequency) signals?",
-    "option 1": "Battery replacement protocols",
-    "option 2": "Energy harvesting technologies",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify the technology as 'energy harvesting' or 'wireless power transfer' (WPT), specifically for RF signals and renewable sources.",
-      "Principle 2: The answer must correctly associate the technology with enabling base stations and devices to capture ambient energy, not just generate their own.",
-      "Principle 3: An answer is incorrect if it confuses energy harvesting with energy generation from dedicated primary sources (e.g., solar panels alone without the harvesting concept).",
-      "Principle 4: An answer is incorrect if it misidentifies the technology as a specific communication protocol (e.g., 5G, Wi-Fi) or a battery technology.",
-      "Principle 5: The answer must encompass the dual capability of harvesting from both renewable resources (e.g., solar, wind) and ambient RF signals."
     ]
   },
   "question 284": {
@@ -10542,37 +9695,6 @@
       "Principle 3: An answer is wrong if it mistakenly names modes involving active amplification, digital signal processing at the elements, or independent coding/streaming (like holographic beamforming).",
       "Principle 4: The answer must clarify this resemblance exists only for a single-layer, single-user Far-field scenario where the surface acts as a passive phase-shifting array.",
       "Principle 5: An incorrect answer often confuses HMIMOS modes with hybrid or fully digital MIMO, or erroneously cites operations like spatial multiplexing or wavefront engineering beyond simple beamsteering."
-    ]
-  },
-  "question 292": {
-    "question": "What is the aim of the BS (Base Station) in the DQL (Deep Q-Learning) scheme for caching?",
-    "option 1": "To ensure reliable data transmission",
-    "option 2": "To maximize cache hit rate",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that the BS's aim in the DQL caching scheme is to make optimal caching decisions, specifically deciding which content items to store in its local cache.",
-      "Principle 2: The answer must link the BS's aim to the DQL framework, i.e., learning the optimal caching policy over time by interacting with the environment to maximize a defined long-term reward.",
-      "Principle 3: A fundamentally wrong answer is one that misinterprets DQL's role, such as stating the BS performs the learning 'for' caching but with an unrelated primary aim like signal processing or physical layer transmission.",
-      "Principle 4: The answer should correctly identify the BS's objective as improving key performance metrics such as cache hit rate, content delivery latency, or backhaul traffic reduction, which are achieved via the learned policy."
-    ]
-  },
-  "question 293": {
-    "question": "What type of messages may be fragmented in the control plane for untrusted non-3GPP access? [3GPP Release 18]",
-    "option 1": "All authentication messages",
-    "option 2": "Large NAS messages",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: The answer must correctly identify that the messages in question are N2 interface messages between the AMF and the N3IWF for untrusted non-3GPP access.",
-      "Principle 2: The answer must specify that fragmentation applies to specific control plane NAS messages, not all N2 messages, with a primary example being the Registration Request message when it exceeds the maximum transmission unit.",
-      "Principle 3: An answer is incorrect if it states that user plane (N3 interface) packets or any other non-N2 control plane messages are subject to this fragmentation procedure.",
-      "Principle 4: An answer is incorrect if it misattributes the function to a different network node (e.g., the UPF or SMF) instead of the N3IWF and AMF.",
-      "Principle 5: The answer must be consistent with the 3GPP specification mechanism (TS 24.502) for NAS message container-based transport over the NWu and N2 interfaces."
     ]
   },
   "question 295": {
@@ -10767,22 +9889,6 @@
       "Principle 5: An answer is incorrect if it confuses EMF with another electrical quantity (e.g., power, current) or misinterprets the given parameters."
     ]
   },
-  "question 31": {
-    "question": "Which element is present if dot11HighThroughputOptionImplemented is true? [IEEE 802.11]",
-    "option 1": "HT Capabilities",
-    "option 2": "Catecholamine Excess",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: The correct answer must identify the presence of an 802.11n (High Throughput/HT) PHY layer in the device.",
-      "Principle 2: The answer should connect dot11HighThroughputOptionImplemented being true to the implementation of PHY features enabling higher data rates (e.g., MIMO, 40 MHz channels).",
-      "Principle 3: An answer is incorrect if it incorrectly associates this MIB variable with a different PHY type like legacy (non-HT), ERP (802.11g), OFDM (802.11a), or later standards like VHT/HE without qualification.",
-      "Principle 4: A correct answer may be considered valid if it names the core standard (802.11n) OR its common marketing name (Wi-Fi 4) OR explicitly describes its high-throughput features.",
-      "Principle 5: An answer is wrong if it misinterprets the Boolean as enabling a non-PHY feature like a specific QoS mechanism, security protocol, or management frame type unrelated to the HT PHY."
-    ]
-  },
   "question 310": {
     "question": "Which component of the architecture facilitates direct communications between devices belonging to the same person?",
     "option 1": "Cloud-based data storage",
@@ -10959,22 +10065,6 @@
       "Principle 5: The answer's core correctness depends on the precise 3GPP release; synonyms for 'Release 15' (e.g., '3GPP Rel-15') are acceptable if they unambiguously refer to it."
     ]
   },
-  "question 324": {
-    "question": "What is the purpose of array gain in MIMO?",
-    "option 1": "N/A - Question is not medical in nature",
-    "option 2": "To capture the increase in MIMO SNR relative to single branch SNR",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must state that array gain is a power gain resulting from coherently combining signals from multiple antenna elements, improving the signal-to-noise ratio (SNR) at the receiver.",
-      "Principle 2: A correct answer must differentiate array gain from diversity gain, clarifying that array gain is achievable even in a line-of-sight (LOS) or correlated channel and does not require independent fading paths.",
-      "Principle 3: An answer is incorrect if it confuses array gain with spatial multiplexing gain, which increases data rate, or with beamforming gain, which is a specific application of array gain for directional transmission.",
-      "Principle 4: A correct answer should link array gain to the fundamental benefit of increasing the effective antenna aperture or directivity, which concentrates energy for more reliable communication.",
-      "Principle 5: An answer is incorrect if it suggests array gain is solely a transmit-side phenomenon; it is a system gain that applies to both transmission and reception when multiple antennas are used coherently."
-    ]
-  },
   "question 325": {
     "question": "What does BA stand for in the context of RRC? [3GPP Release 18]",
     "option 1": "Bandwidth Adaptation",
@@ -11005,22 +10095,6 @@
       "Principle 3: An answer is incorrect if it claims the main advantage is simply 'more accuracy' without specifying the context of complex patterns or unstructured data.",
       "Principle 4: An answer is incorrect if it misattributes the advantage solely to having 'more layers' or 'more parameters' without linking this to the core capability of representation learning.",
       "Principle 5: A correct answer should imply or state that this feature learning capability allows deep learning models to tackle tasks previously infeasible for traditional machine learning."
-    ]
-  },
-  "question 331": {
-    "question": "Which release of 3GPP introduced the C-V2X standard based on the 5G new radio air interface?",
-    "option 1": "Rel. 15",
-    "option 2": "Rel. 16",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: The answer must correctly identify the 3GPP Release number (Release 16) as the one that introduced the 5G NR-based C-V2X standard.",
-      "Principle 2: The answer must correctly associate the C-V2X standard with the 5G New Radio (NR) air interface, not LTE (which was introduced in Release 14).",
-      "Principle 3: An answer is incorrect if it cites an earlier release (e.g., Release 14 or 15) for the 5G NR-based C-V2X introduction.",
-      "Principle 4: An answer is incorrect if it confuses the air interface, stating C-V2X is based on LTE for this specific 5G NR context.",
-      "Principle 5: The answer's core fact must be precise; mentioning 'Release 16' is the definitive correct answer, while vague references to '5G phases' without the release number are insufficient."
     ]
   },
   "question 333": {
@@ -11118,22 +10192,6 @@
       "Principle 5: An answer is incorrect if it confuses the Knowledge Vault with a simple search engine cache or a static, non-probabilistic database."
     ]
   },
-  "question 34": {
-    "question": "What hardware characteristics are important for compiling for noisy quantum computers?",
-    "option 1": "Cannot generate a valid medical distractor for this topic.",
-    "option 2": "Qubit topology, gate error rates, and readouts",
-    "answer": {
-      "option 1": 0,
-      "option 2": 1
-    },
-    "rubrics": [
-      "Principle 1: A correct answer must identify qubit connectivity/topology as a critical hardware characteristic for compilation, as it dictates how two-qubit gates can be physically applied.",
-      "Principle 2: A correct answer must mention gate fidelity/error rates as a key characteristic, as compilation must account for and mitigate the impact of noisy operations.",
-      "Principle 3: A correct answer must reference coherence times (T1, T2) as an essential constraint, as algorithms must be compiled to execute within these decoherence limits.",
-      "Principle 4: An answer is incorrect if it focuses solely on classical compiler optimization (e.g., loop unrolling) without linking it to the physical quantum hardware constraints.",
-      "Principle 5: A correct answer should acknowledge that compilation strategies (e.g., gate decomposition, qubit mapping, scheduling) are directly shaped by these hardware characteristics to minimize error and depth."
-    ]
-  },
   "question 340": {
     "question": "Which learning approach uses both labeled and unlabeled data for training?",
     "option 1": "Semi-supervised learning",
@@ -11212,22 +10270,6 @@
       "Principle 3: A core error would be stating a limited or incorrect range (e.g., only up to 52.6 GHz, which was a key limit in earlier releases, or omitting the lower FR1 spectrum entirely)",
       "Principle 4: The answer should acknowledge the inclusion of studies for frequencies above 71 GHz (into the sub-THz range, e.g., 92-300 GHz) as part of Release 18's work item on 'NR beyond 71 GHz' for future evolution",
       "Principle 5: The answer must be based on the 3GPP-specified channel model requirements (e.g., TR 38.901 extensions), not just general supported frequency bands, and should indicate support for the contiguous bandwidths required in these ranges"
-    ]
-  },
-  "question 346": {
-    "question": "Which approach uses generative models to provide generated samples for replay?",
-    "option 1": "Replay-based approach",
-    "option 2": "Knowledge distillation method",
-    "answer": {
-      "option 1": 1,
-      "option 2": 0
-    },
-    "rubrics": [
-      "Principle 1: The answer must correctly identify 'Deep Generative Replay' or its conceptual synonym as the approach within continual learning that uses generative models for sample replay.",
-      "Principle 2: The answer must connect the concept to the problem of 'catastrophic forgetting' in neural networks, as this is the core issue the approach addresses.",
-      "Principle 3: An answer is incorrect if it wrongly associates the approach with simple experience replay using stored real data, or with techniques like distillation or regularization that do not involve generative *modeling* of prior task data.",
-      "Principle 4: The answer must indicate that the generative model (e.g., a Variational Autoencoder or Generative Adversarial Network) is trained on previous task data to produce synthetic but representative samples.",
-      "Principle 5: An answer is incorrect if it misattributes the core technique to unrelated domains or unrelated generative model applications, such as data augmentation for a single task or pure synthetic data generation without the continual learning/replay context."
     ]
   },
   "question 349": {

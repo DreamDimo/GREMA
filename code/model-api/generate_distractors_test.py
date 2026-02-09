@@ -56,8 +56,8 @@ MODEL_NAME = 'deepseek-v3.2'
 API_TIMEOUT = 150.0  # 生成干扰项可能需要更长时间
 
 # 文件路径
-INPUT_FILE = "E:/project/verl/huawei/dataset/TeleQnA_test_filtered_sft_formatted.json"  # 输入的 SFT 格式数据
-OUTPUT_FILE = "E:/project/verl/huawei/experiments/result/TeleQnA_test_filtered_with_options.json"  # 输出的多选题格式
+INPUT_FILE = "E:/project/verl/huawei/dataset/TeleQnA_train_sft_formatted.json"  # 输入的 SFT 格式数据
+OUTPUT_FILE = "E:/project/verl/huawei/experiments/result/TeleQnA_train_with_options.json"  # 输出的多选题格式
 
 # 干扰项配置
 NUM_DISTRACTORS = 3  # 每个问题生成3个干扰项（加上正确答案共4个选项）
@@ -180,100 +180,69 @@ def build_distractor_generation_prompt(question: str, correct_answer: str, num_d
     3. 基于这些错误点生成针对性的干扰项
     4. 确保干扰项各不相同且长度风格一致
     """
-    system_prompt = """You are an expert medical professional with extensive knowledge in medicine, healthcare, and clinical practice. Your task is to generate high-quality distractors for medical questions by analyzing potential reasoning errors."""
+    system_prompt = """You are an expert in telecommunications technology. Your task is to generate high-quality distractors by analyzing potential reasoning errors."""
 
-    # 计算正确答案的长度范围
-    correct_len = len(correct_answer)
-    min_len = int(correct_len * 0.5)
-    max_len = int(correct_len * 2.0)
-
-    user_prompt = f"""# Medical Question
+    user_prompt = f"""# Question
 {question}
 
-# Correct Answer (Length: {correct_len} characters)
+# Correct Answer
 {correct_answer}
 
 # Task
-Generate {num_distractors} distinct, high-quality distractors (incorrect answer options) for this medical question.
-
-# CRITICAL Requirements (MUST FOLLOW)
-
-## 1. Length Requirement ⚠️ IMPORTANT
-- Each distractor MUST be between {min_len} and {max_len} characters long
-- This is approximately 50%-200% of the correct answer's length
-- **If a distractor is too short or too long, it will be automatically rejected**
-- Aim for similar length as the correct answer when possible
-
-## 2. Uniqueness Requirement ⚠️ IMPORTANT
-- All {num_distractors} distractors MUST be completely different from each other
-- No two distractors should have the same meaning or be paraphrases
-- Each distractor must represent a DIFFERENT type of error
-- **Duplicate or similar distractors will be rejected**
-
-## 3. Different from Correct Answer ⚠️ IMPORTANT
-- Each distractor MUST be clearly different from the correct answer
-- Don't just slightly modify the correct answer
-- Ensure substantive differences in meaning and content
+Generate {num_distractors} distinct, high-quality distractors (incorrect answer options) for this question.
 
 # Step-by-Step Approach
 
 ## Step 1: Analyze the Correct Answer Generation Process
 First, think about how the correct answer was derived:
-- What medical knowledge or clinical reasoning steps are needed to arrive at this answer?
-- What are the key medical concepts, conditions, or facts involved?
-- What diagnostic steps, treatment protocols, or clinical guidelines are required?
-- What anatomical, physiological, or pathological principles are involved?
+- What knowledge or reasoning steps are needed to arrive at this answer?
+- What are the key concepts or facts involved?
+- What calculations or logical steps are required?
 
-## Step 2: Identify {num_distractors} DIFFERENT Potential Error Points
-Consider where someone (medical students, healthcare professionals) might make mistakes. Identify {num_distractors} DISTINCT error types:
-- **Conceptual confusion**: Mixing up related but different diseases, symptoms, or treatments
-- **Incomplete reasoning**: Stopping halfway through the differential diagnosis or treatment plan
-- **Dosage/calculation errors**: Making errors in drug dosages, lab value interpretations, or statistical data
-- **Common misconceptions**: Typical misunderstandings about diseases, medications, or procedures
-- **Outdated knowledge**: Using old treatment guidelines, deprecated medications, or obsolete diagnostic criteria
-- **Overgeneralization**: Applying treatment protocols too broadly without considering patient-specific factors
-- **Confusing similar conditions**: Mixing up conditions with similar presentations (e.g., different types of diabetes, hypertension stages)
-- **Mechanism confusion**: Misunderstanding disease mechanisms, drug actions, or physiological processes
-- **Symptom misinterpretation**: Confusing primary vs secondary symptoms
-- **Treatment contraindication**: Suggesting inappropriate treatments for specific conditions
+## Step 2: Identify Potential Error Points
+Consider where someone might make mistakes in the reasoning process:
+- **Conceptual confusion**: Mixing up related but different concepts
+- **Incomplete reasoning**: Stopping halfway through the logical process
+- **Calculation errors**: Making arithmetic or unit conversion mistakes
+- **Misconceptions**: Common misunderstandings in this field
+- **Outdated knowledge**: Using old standards or deprecated information
+- **Overgeneralization**: Applying rules too broadly
 
-## Step 3: Generate {num_distractors} Distractors - Each from a DIFFERENT Error Point
-For each distractor:
-1. Pick a DIFFERENT error type from Step 2
-2. Create a complete, detailed answer that reflects that specific error
-3. Ensure the length is within {min_len}-{max_len} characters
-4. Make it medically plausible but clearly incorrect
+## Step 3: Generate Distractors Based on These Errors
+For each distractor, identify a specific error point and create an answer that would result from that mistake.
 
-# Quality Checklist (Verify Before Submitting)
-✓ All {num_distractors} distractors are between {min_len} and {max_len} characters
-✓ Each distractor is completely unique (no duplicates or similar ones)
-✓ Each distractor represents a DIFFERENT type of error
-✓ All distractors are different from the correct answer
-✓ All distractors are medically plausible but incorrect
-✓ Proper medical terminology is used throughout
+# Requirements
+1. **Distinct**: Each distractor must be UNIQUE and different from others
+2. **Plausible**: Should seem reasonable to someone with incomplete knowledge
+3. **Error-Based**: Each should represent a specific, realistic reasoning error
+4. **Style Match**: Match the length, format, and technical level of the correct answer
+5. **Technically Sound Format**: Use proper terminology and formatting
+6. **Avoid**: 
+   - Don't make distractors too obviously wrong
+   - Don't create distractors that are very similar to each other
+   - Don't use absurd or nonsensical options
 
 # Output Format
-Provide your analysis and exactly {num_distractors} distractors in the following JSON format.
-**IMPORTANT**: Make sure each "text" field is properly formatted and has the correct length.
+Provide your analysis and exactly {num_distractors} distractors in the following format:
 
 ```json
 {{
-  "reasoning_analysis": "Brief explanation of how the correct medical answer is derived and key clinical error points",
+  "reasoning_analysis": "Brief explanation of how the correct answer is derived and key error points",
   "distractor_1": {{
-    "error_type": "What type of medical/clinical error this represents",
-    "text": "The complete distractor text (must be {min_len}-{max_len} characters)"
+    "error_type": "What type of error this represents",
+    "text": "The distractor text"
   }},
   "distractor_2": {{
-    "error_type": "A DIFFERENT type of medical/clinical error",
-    "text": "The complete distractor text (must be {min_len}-{max_len} characters, DIFFERENT from distractor_1)"
+    "error_type": "What type of error this represents",
+    "text": "The distractor text"
   }},
   "distractor_3": {{
-    "error_type": "A DIFFERENT type of medical/clinical error",
-    "text": "The complete distractor text (must be {min_len}-{max_len} characters, DIFFERENT from distractor_1 and distractor_2)"
+    "error_type": "What type of error this represents",
+    "text": "The distractor text"
   }},
   "distractor_4": {{
-    "error_type": "A DIFFERENT type of medical/clinical error",
-    "text": "The complete distractor text (must be {min_len}-{max_len} characters, DIFFERENT from all previous distractors)"
+    "error_type": "What type of error this represents",
+    "text": "The distractor text"
   }}
 }}
 ```
@@ -385,8 +354,7 @@ def validate_and_deduplicate_distractors(
         distractors: List[str], 
         correct_answer: str, 
         min_length_ratio: float = 0.5,
-        max_length_ratio: float = 2.0,
-        debug: bool = False
+        max_length_ratio: float = 2.0
 ) -> List[str]:
     """
     验证和去重干扰项
@@ -407,51 +375,24 @@ def validate_and_deduplicate_distractors(
     seen = set()
     correct_lower = correct_answer.lower().strip()
     
-    rejection_stats = {
-        "duplicate": 0,
-        "same_as_correct": 0,
-        "too_short": 0,
-        "too_long": 0
-    }
-    
-    for idx, d in enumerate(distractors, 1):
+    for d in distractors:
         d_stripped = d.strip()
         d_lower = d_stripped.lower()
-        d_len = len(d_stripped)
         
         # 检查是否与已有的重复
         if d_lower in seen:
-            rejection_stats["duplicate"] += 1
-            if debug:
-                print(f"    Rejected distractor {idx}: DUPLICATE")
             continue
         
         # 检查是否与正确答案相同
         if d_lower == correct_lower:
-            rejection_stats["same_as_correct"] += 1
-            if debug:
-                print(f"    Rejected distractor {idx}: SAME AS CORRECT ANSWER")
             continue
         
         # 检查长度是否合理
-        if d_len < min_len:
-            rejection_stats["too_short"] += 1
-            if debug:
-                print(f"    Rejected distractor {idx}: TOO SHORT ({d_len} < {min_len})")
-            continue
-        
-        if d_len > max_len:
-            rejection_stats["too_long"] += 1
-            if debug:
-                print(f"    Rejected distractor {idx}: TOO LONG ({d_len} > {max_len})")
+        if len(d_stripped) < min_len or len(d_stripped) > max_len:
             continue
         
         validated.append(d_stripped)
         seen.add(d_lower)
-    
-    # 如果有拒绝的，打印统计
-    if debug and any(rejection_stats.values()):
-        print(f"    Rejection stats: {rejection_stats}")
     
     return validated
 
@@ -493,29 +434,13 @@ async def generate_distractors_for_question(
             # 提取干扰项
             distractors = parse_distractors_from_response(response, num_distractors)
             
-            # 记录提取到的原始干扰项数量
-            raw_count = len(distractors)
-            
             # 验证和去重
             validated_distractors = validate_and_deduplicate_distractors(
                 distractors, correct_answer
             )
             
-            # 详细的反馈信息
             if len(validated_distractors) < num_distractors:
-                rejected_count = raw_count - len(validated_distractors)
-                correct_len = len(correct_answer)
-                min_len = int(correct_len * 0.5)
-                max_len = int(correct_len * 2.0)
-                
-                reasons = []
-                if rejected_count > 0:
-                    reasons.append(f"{rejected_count} rejected (length/duplicate/same as correct)")
-                
-                feedback = f"Only {len(validated_distractors)}/{num_distractors} valid " \
-                          f"(raw: {raw_count}, {', '.join(reasons) if reasons else 'unknown reason'}). " \
-                          f"Required length: {min_len}-{max_len} chars"
-                print(f"  Warning [{question_id}]: {feedback}")
+                print(f"  Warning: Only {len(validated_distractors)}/{num_distractors} valid unique distractors for {question_id}")
             
             return question_id, validated_distractors, None
             
