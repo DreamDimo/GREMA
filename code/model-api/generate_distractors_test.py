@@ -60,7 +60,7 @@ INPUT_FILE = "E:/project/verl/huawei/dataset/TeleQnA_train_sft_formatted.json"  
 OUTPUT_FILE = "E:/project/verl/huawei/experiments/result/TeleQnA_train_with_options.json"  # 输出的多选题格式
 
 # 干扰项配置
-NUM_DISTRACTORS = 3  # 每个问题生成3个干扰项（加上正确答案共4个选项）
+NUM_DISTRACTORS = 1  # 每个问题生成3个干扰项（加上正确答案共4个选项）
 DISTRACTOR_TYPES = [
     "partially_correct",  # 部分正确但不完整
     "common_misconception",  # 常见误解
